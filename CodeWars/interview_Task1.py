@@ -16,5 +16,5 @@ def foo(length):
 
 
 print(foo(10))
-print(foo(-10))
+print(foo(-10.0908908))
 # foo(-8)
