@@ -12,7 +12,7 @@ def foo(length):
     if length == 0:
         return [0]
     is_minus = length < 0
-    return [i if not is_minus else -i for i in range(abs(length)) if i % 2 == 0]
+    return [i for i in range(abs(length)) if i % 2 == 0]
 
 
 print(foo(10))
