@@ -25,8 +25,12 @@ class People:
         else:
             return 'Invalid person object'
 
+    def add_People(self, people):
+        for person in people:
+            self.add_Person(person)
+
     def __str__(self):
-        return f'Greetings! There are {len(self.people)} people in the list.\n' + ', '.join(str(person) for person in self.people)
+        return f'Greetings! There are {len(self.people)} people in the list.\n' + '. \n'.join(str(person) for person in self.people)+'.'
 
     def __repr__(self):
         return self.__str__()
@@ -36,8 +40,8 @@ girl = Person('Maria', 15)
 boy = Person()
 boy.name = 'Sasha'
 boy.age = 19
-print(girl)
-print(boy)
+# print(girl)
+# print(boy)
 people = People()
 people.add_Person(girl)
 people.add_Person(boy)
