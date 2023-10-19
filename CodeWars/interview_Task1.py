@@ -7,6 +7,7 @@ def invert(func):
 
     return wrapper
 
+
 @invert
 def foo(length):
     if length == 0:
